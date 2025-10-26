@@ -1,0 +1,32 @@
+# for normal syntax highlight (in vim, nvim)
+# u can use -  :set filetype=dosini
+
+#                          __
+#  _      _____  ___  ____/ /
+# | | /| / / _ \/ _ \/ __  / 
+# | |/ |/ /  __/  __/ /_/ /  
+# |__/|__/\___/\___/\__,_/
+#				mako dotfiles
+
+font=BigBlueTermPlus Nerd Font
+
+width=500
+height=100
+
+padding=10,10
+
+border-size=3
+border-radius=0
+
+background-color=#DCDAD7
+text-color=#45363b
+border-color=#0000002b
+progress-color=over #45363b
+
+max-icon-size=64
+icon-border-radius=5
+
+default-timeout=15000
+
+text-alignment=center
+anchor=top-right

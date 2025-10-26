@@ -1,0 +1,69 @@
+{
+	"layer": "bottom",
+	"position": "bottom",
+	"spacing": 7,
+	"width": 1880,
+	// modules-left
+	"modules-left": [
+		"hyprland/workspaces",
+		"hyprland/language"
+	],
+	"hyprland/language": {
+		"format-en": "us",
+		"format-ru": "ru",
+		"format-uk": "ua",
+		"on-click": "hyprctl switchxkblayout current next"
+	},
+	//modules-center
+	"modules-center": [
+		"hyprland/window"
+	],
+	"hyprland/window": {
+		"tooltip": false
+	},
+	//modules-right
+	"modules-right": [
+		"group/sound",
+		"clock",
+		"tray"
+	],
+	"group/sound": {
+		"orientation": "inherit",
+		"drawer": {
+			"transition-duration": 500,
+			"children-class": "not-pulseaudio",
+			"transition-left-to-right": false,
+		},
+		"modules": [
+			"pulseaudio",
+			"mpris"
+		]
+	},
+	"pulseaudio": {
+		"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+		"format": "{volume}%",
+		"format-muted": "-{volume}%",
+	},
+	"mpris": {
+		"format": "{status_icon} {artist} - {title}",
+		"format-paused": "{status_icon} {artist} - {title}",
+		"status-icons": {
+			"playing": "+",
+			"paused": "-"
+		},
+		"on-scroll-up": "playerctl next",
+		"on-scroll-down": "playerctl previous",
+		"max-length": 30,
+
+		"tooltip": false
+	},
+	"clock": {
+		"interval": 1,
+		"format": "{:%H:%M:%S}",
+		"format-alt": "{:%Y-%m-%d}",
+		"tooltip": false
+	},
+	"tray": {
+		"tooltip": false
+	}
+}

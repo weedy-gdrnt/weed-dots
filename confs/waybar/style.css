@@ -1,0 +1,92 @@
+
+/*                        __
+  _      _____  ___  ____/ /
+ | | /| / / _ \/ _ \/ __  / 
+ | |/ |/ /  __/  __/ /_/ /  
+ |__/|__/\___/\___/\__,_/
+				waybar dotfiles (css)
+*/
+
+* {
+	font-family: BigBlueTermPlus Nerd Font;
+	transition: 0;
+	text-shadow: none;
+	box-shadow: none;
+    border: none;
+}
+
+window#waybar {
+	background: #dcdad7;
+	border-top: 3px solid rgba(0, 0, 0, 0.1686);
+	border-right: 3px solid rgba(0, 0, 0, 0.1686);
+	border-left: 3px solid rgba(0, 0, 0, 0.1686);
+}
+
+.modules-left   *,
+.modules-center *,
+.modules-right  * {
+	padding: 1.5 5px;
+}
+
+#window {
+	background: none;
+}
+
+#tray {
+	margin-right: 10px;
+}
+
+#pulseaudio:hover  ,
+#language:hover    ,
+#mpris:hover	   ,
+#custom-swww:hover ,
+#clock:hover 	   ,
+#custom-pmenu:hover {
+	color: #000;
+}
+
+#pulseaudio        ,
+#language          ,
+#clock       	   ,
+#mpris      	   ,
+#custom-swww       ,
+#custom-pmenu       {
+	color: #416978;
+}
+
+#workspaces {
+	transition: .3s ease-out;
+	color: #45363b;
+	background: none;
+}
+
+#workspaces button {
+	color: #45363b;
+	transition: .3s ease-out;
+	margin: 0 5px 0 5px;
+	background: none;
+}
+
+#workspaces button.active {
+	color: #416978;
+	padding: 0 12.5px;
+	background: none;
+}
+
+#workspaces button.active label {
+	color: #416978;
+	transition: .3s ease-out;
+	background: none;
+}
+
+#workspaces button:hover {
+	transition: .3s ease-out;
+	background: none;
+	color: #96522b;
+}
+
+#workspaces button.active:hover label {
+	transition: .3s ease-out;
+	background: none;
+	color: #96522b;
+}
